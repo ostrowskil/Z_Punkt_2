@@ -80,9 +80,6 @@ namespace Zadanie_Punkt
             return p1 * p; 
         }
 
-        public static Punkt operator /(int p, Punkt p1)
-        {
-            return p1 * p;
-        }
+        
     }
 }
