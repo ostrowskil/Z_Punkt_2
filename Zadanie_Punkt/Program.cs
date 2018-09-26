@@ -10,15 +10,30 @@ namespace Zadanie_Punkt
     {
         static void Main(string[] args)
         {
+
+            for (int i = 0; i < 5; i++)
+            {
+                Punkt punkt8 = new Punkt(10, 10);
+            }
+
+            Console.WriteLine("LICZNIK{0}",Punkt.Licznik);
+
             Console.WindowHeight = 50;
             Console.WindowWidth = 84;
             Console.BackgroundColor = ConsoleColor.Blue;
-            Console.Clear();
+          //  Console.Clear();
             Console.ForegroundColor = ConsoleColor.White;
             Console.Title = "BALLUFF - KURS C#";
             string kursor = "BALLUFF";
 
-            Punkt punkt = new Punkt();
+            Punkt punkt = new Punkt(20, 20);
+
+            Punkt punkt1 = new Punkt(2, 2);
+            Punkt punkt2 = new Punkt(2, 2);
+
+            Punkt punkt3 = punkt1 - punkt2;
+
+            punkt3.Wspolrzedne();
 
             
             
@@ -54,10 +69,9 @@ namespace Zadanie_Punkt
 
                 }
             }
+
             
-
-
-
+            
             Console.ReadKey();
         }
     }
